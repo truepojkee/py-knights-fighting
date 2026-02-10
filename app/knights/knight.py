@@ -51,5 +51,5 @@ class Knight:
         self.hp = max(0, self.hp - damage)
 
     def fight(self, opponent: Knight) -> None:
-        damage = max(0, opponent.basic_power - self.protection)
+        damage = max(0, opponent.power - self.protection)
         self.take_damage(damage)
